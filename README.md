@@ -4,11 +4,19 @@ This re-packages the caseta code from this repo: https://github.com/jhanssen/hom
 
 ## Install
 
-in your home assistant config directory
+Copy the directory and files in this repo into your home assistant config/custom_components directory
+
+## Configure
 
 ```
-mkdir custom_components
-cd custom_components
-git clone https://github.com/ksheumaker/ha-caseta-pro.git
+caseta:
+  bridges:
+    - host: XXX.XXX.XXX.XXX
+      devices:
+        - id: 2
+          type: dimmer
+        - id: 3
+          type: switch
+        - id: 4
+          type: remote
 ```
-
